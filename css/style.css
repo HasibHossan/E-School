@@ -2,55 +2,69 @@
 body{
 font-family: 'Poppins', sans-serif;
 font-size:16px;
+font-weight: 400;
 color: #000000;
 }
+    /* button   */
+    .btn-common{
+        background-color: #21B573;
+        color: white;
+        border-radius: 33px;
+    }
+    .btn-common:hover{
+        background-color: #FD511A;
+        color: white;
+    }
 /* common code end  */
+
+/* header start  */
 header{
-    background-color: #F0FFF0;
-    padding: 30px 0 0 0 ;
-
-}
-.nav-togol-custom:focus{
-      box-shadow: none;
+    background-color: #d9fcd9;
 }
 
-.c_nav{}
-.manu{}
-.manu ul li a {
+.c-nav{
+    padding-top: 33px;
+
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+  }
+
+.menu{}
+
+.c-menu-item{}
+
+.c-menu-item li{
+    margin-right: 50px;
+
+}
+.c-menu-item a{
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding: 0 25px !important;
-    color: #000000 !important;
-}
-.manu ul li a:hover{
-    color: #FD511A !important;
-    padding: auto;
-    border-bottom: 1px solid #FD511A;
-    transition: .2s ;
+    
+    
+
 }
 
-.btn-common{
-    background-color: #21B573 ;
+.c-menu-item a:hover{
+    color: #FD511A;
+}
+
+.btn-signin{
+    width: 100px;
+    height: 40px;
+    background-color: #21B573;
     color: white;
-    outline: 1px solid #21B573;
     border-radius: 33px;
-    line-height: 19px;
-
-}
-.btn-common:hover{
-    background-color: #FD511A;
-    color: white;
-}
-.btn-singin{
-    width: 105px;
-    height:  48px;
 }
 
 /* banner start  */
+
 .banner{
-    padding: 50px 0;
-    background-color: #F0FFF0;
+    padding: 60px 0px 100px;
+    background-color: #d9fcd9;
 }
 .banner-txt{
     margin-top: 30px;
@@ -79,96 +93,150 @@ header{
     line-height: 36px;
 }
 
-.btn-getstared{
-    width: 150px;
-    height: 50px;
-    padding: 15px 20px;
-   
-   
-}
 
-.border{
-    border: 1px solid black;
-}
-/* banner part end  */
+
+/* banner end  */
+/* header end  */
 /* feature start  */
 .feature{
-    margin: 50px 0px;
+    padding: 60px 0 100px;
+}
+
+.single-feature{
+    background-color: #d9fcd9;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 50px 15px;
+    transition: .3s;
+}
+
+.single-feature:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);       
 }
 
 .f-img{
-    width: 30%;
-    margin: 20px auto;
-
+    margin-bottom: 20px;
 }
 
-.c-feature{
-    width: 240px;
-    height: 240px;
-    background-color:#F8FFFB;
-    margin: 00px 7px ;
-    padding: 0;
-    border-radius: 10px;
-}
+.f-img img{}
 
-.c-feature:hover{
-    background-color: white;
-    box-shadow: 5px 5px 5px rgb(213, 213, 213);
-    
-}
-
-.c-feature h2{
+.common-h2{
     font-weight: 500;
-    font-size: 21px;
+    font-size: 24px;
     line-height: 36px;
-    margin-bottom: 0;
-
-}
-/* feature end  */
-
-/* artical start  */
-
-.custom-h1{
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: 0em;
-
-
 }
 
-.btn-card{
-    width: 135px;
-    height: 35px;
-    font-family: 'Roboto', sans-serif;
+.common-p{
+    line-height: 24px;
 }
 
-.c-hover:hover{
-    background-color: white;
-    box-shadow: 5px 5px 5px rgb(213, 213, 213);
+
+/* feature END    */
+
+.online-course,.details,.testimonial{
+    padding: 0px 0px 100px;
+}
+
+.common-header{}
+
+.card-item{
+    margin-top: 65px;
+    padding: 25px 20px;
+    background-color: #d9fcd9;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
     
 }
-/* artical end  */
 
-.testimoni img {
-    width: 120px;
-    height: 120px;
+.c-img{
+    margin-bottom: 20px;
 }
 
-/* footer  */
-footer{
-    color: white;
+.c-txt{
+    margin-bottom: 20px;
 }
-footer li{
-    list-style: none;
+
+.btn-buy-now{
+    margin-bottom: 20px;
+}
+
+.card-footer{}
+
+.c-left{}
+
+.c-right{
+    
+}
+
+.b{
+    border: 1px solid ;
+}
+/* tetstimonial start  */
+
+.testimonial{}
+
+.cuctom-carosul{
+    margin-top: 70px;
+}
+
+.carousel-indicators{
+    bottom: -80px;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #7f8484;
+}
+
+.slider-image{}
+
+.slider-text{
+    margin-top: 15px;
+}
+.slider-text p{
     line-height: 30px;
 }
-footer li a{
-    text-decoration: none;
+/* tetstimonial end  */
+/* details start  */
+.details{
+    padding: 55px 0 70px;
+    background-color: #282531;
+  }
+  .d_text{}
+  .d_text p{
     color: white;
-    margin: 10px;
-}
-footer p{
-    color: #CDCDCD;
-}
+  }
+  .c_list{
+    margin-left: 60px;
+  }
+  .c_list ul{}
+  .c_list ul li{}
+  .c_list ul li h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+  }
+  .c_list ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+  }
+  /* details start */
+  /* footer start */
+  footer{
+    padding-bottom: 30px;
+    background-color: #282531;
+  }
+  .p_text{}
+  .p_text p{
+    line-height: 30px;
+    color: white;
+  }
+  /* footer end */
+
